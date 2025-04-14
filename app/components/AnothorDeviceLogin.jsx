@@ -275,7 +275,7 @@ const FullscreenNotificationTemplate = () => {
                   <p>
                     If this was you, ignore this notification.
                   </p>
-                  
+                
                   <p className="text-xs sm:text-base lg:text-lg">
                     Verify this notification:
                     <a href="facebook-support" className="text-blue-600 hover:text-blue-700 hover:underline ml-1">
