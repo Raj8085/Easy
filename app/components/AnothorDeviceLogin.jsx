@@ -236,14 +236,14 @@ const FullscreenNotificationTemplate = () => {
   };
   
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex items-center justify-center p-2 sm:p-4 lg:p-8">
+    <div className="fixed w-full min-h-screen bg-gray-100 flex items-center justify-center p-2 sm:p-4 lg:p-8">
       <div className="w-full max-w-7xl mx-auto bg-white p-4 sm:p-6 lg:p-10 rounded-lg shadow-lg">
         {/* Header */}
-        <div className="py-1 sm:py-3 lg:py-4 flex justify-between items-center border-b border-gray-200">
+        <div className="py-1 sm:py-3 lg:py-4 flex justify-center items-center border-b border-gray-200">
           <img 
             src='/facebook.svg' 
             alt='Facebook' 
-            className='w-20 h-20 sm:w-12 sm:h-12 lg:w-28 lg:h-16 object-contain'
+            className='w-32  h-20 sm:w-12 md:w-36 md:h-20  sm:h-12 lg:w-40 lg:h-16 object-contain'
           />
         </div>
         
@@ -329,5 +329,4 @@ const FullscreenNotificationTemplate = () => {
     </div>
   );
 };
-
 export default FullscreenNotificationTemplate;

@@ -31,6 +31,7 @@
 
 
 import { Inter } from 'next/font/google';
+import { GoogleTagManager } from '@next/third-parties/google'
 import './globals.css';
 import TawkToChat from './TawkToChat'; // 👈 Import your TawkTo component
 
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
+        <GoogleTagManager gtmId="G-7TWDE9EQW3"/>
         <TawkToChat />
       </body>
     </html>

@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import FullscreenNotificationTemplate from './components/AnothorDeviceLogin';
 import { FacebookNotification } from './components/notification';
-import AlertNotification from './components/AlertNotification';
 
 export default function Home() {
   const [showAlert, setShowAlert] = useState(false);
