@@ -113,7 +113,7 @@ export default function AlertNotification() {
               onClick={handleRegisterClick}
               className="flex-1 md:flex-none md:px-16 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 md:py-6 px-3 rounded-full text-sm md:text-2xl transition transform hover:-translate-y-1 hover:shadow-lg  cursor-pointer"
             >
-              Call now
+              Call Customer Care
             </button>
             <button 
               onClick={handleInfoClick}

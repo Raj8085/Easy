@@ -102,7 +102,7 @@ export function FacebookNotification() {
   return (
     <div className="fixed w-full flex items-center justify-center p-4 bg-gray-50">
       <div className="w-full max-w-lg border-t-4 border-t-[#1877F2] shadow-lg bg-white rounded-lg">
-        <div className="flex flex-row items-start justify-between p-4 pb-4">
+        <div className="flex flex-row items-start justify-between p-4 ">
         <div className="w-full flex justify-center items-center">
   <div className="rounded-full">
     <img 
@@ -141,7 +141,7 @@ export function FacebookNotification() {
                        font-medium py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg 
                        transition transform hover:-translate-y-1 hover:shadow-lg cursor-pointer"
             >
-              Call now
+              Call Customer Care
             </button>
             <button 
               onClick={handleInfoClick}
