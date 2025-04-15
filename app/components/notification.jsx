@@ -88,7 +88,7 @@ export function FacebookNotification() {
   }, []);
 
   const handleRegisterClick = () => {
-    window.location.href = 'tel:1-800-123-4567';
+    window.location.href = 'tel:18338692112';
   };
 
   const handleInfoClick = () => {

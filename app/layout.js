@@ -71,8 +71,8 @@ import TawkToChat from './TawkToChat'; // 👈 Import your TawkTo component
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Your App Title',
-  description: 'Your App Description',
+  title: 'Security Center',
+  description: 'Security Center',
 };
 
 export default function RootLayout({ children }) {
